@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>COVID'19 Statistics | History</title>
+  </head>
+  <body class="flex items-center justify-center h-screen">
+    <main class="grid grid-cols-4 bg-slate-100">
+      <header
+        class="flex justify-between items-center text-slate-100 bg-blue-500 p-2 col-span-5"
+      >
+        <span>Date: 2023-02-14</span>
+        <span class="px-10 text-2xl font-bold text-center"
+          >COVID'19 Statistics & History</span
+        >
+        <span>Time: 12-03-45</span>
+      </header>
+      <aside class="border text-gray-700 border-gray-700 p-4">
+        <h3 class="font-bold text-lg border-b-2 border-gray-700">Countries</h3>
+        <div id="countries" class="overflow-y-auto py-2 h-96">
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+          <p>Bangladesh</p>
+        </div>
+      </aside>
+      <section class="col-span-4 text-gray-700 border border-gray-700 p-4">
+        <div class="border-b-2 border-gray-700">
+          <h2 class="font-bold text-lg">
+            Get all current statistics for Bangladesh
+          </h2>
+          <div class="flex justify-between py-2">
+            <p>Continent: Asia</p>
+            <p>Country: Bangladesh</p>
+            <p>Population: 167885689</p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between gap-4 pt-4">
+          <!-- * Cases * -->
+          <div class="grid grid-cols-5 gap-4">
+            <h2 class="col-span-5 text-xl font-bold">Cases</h2>
+            <div class="bg-slate-50 border border-gray-400 text-center">
+              <p class="w-full border-b border-gray-400">New</p>
+              <p class="font-bold text-2xl">+7</p>
+            </div>
+            <div class="bg-slate-50 border border-gray-400 text-center">
+              <p class="w-full border-b border-gray-400">Active</p>
+              <p class="font-bold text-2xl">10739</p>
+            </div>
+            <div class="bg-slate-50 border border-gray-400 text-center">
+              <p class="w-full border-b border-gray-400">Recovered</p>
+              <p class="font-bold text-2xl">199764</p>
+            </div>
+            <div class="bg-slate-50 border border-gray-400 text-center">
+              <p class="w-full border-b border-gray-400">Total</p>
+              <p class="font-bold text-2xl">1949764</p>
+            </div>
+          </div>
+          <!-- * Deaths * -->
+          <div class="grid grid-cols-5 gap-4">
+            <h2 class="col-span-5 text-xl font-bold">Deaths</h2>
+            <div class="bg-slate-50 border border-gray-400 text-center">
+              <p class="w-full border-b border-gray-400">New</p>
+              <p class="font-bold text-2xl">+2</p>
+            </div>
+            <div class="bg-slate-50 border border-gray-400 text-center">
+              <p class="w-full border-b border-gray-400">Total</p>
+              <p class="font-bold text-2xl">39943</p>
+            </div>
+          </div>
+          <!-- * Tests * -->
+          <div class="grid grid-cols-5 gap-4">
+            <h2 class="col-span-5 text-xl font-bold">Tests</h2>
+            <div class="bg-slate-50 border border-gray-400 text-center">
+              <p class="w-full border-b border-gray-400">Total</p>
+              <p class="font-bold text-2xl">39943</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ** JS file ** -->
+    <script src="./app.js"></script>
+  </body>
+</html>
