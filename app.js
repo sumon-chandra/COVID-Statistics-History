@@ -1,3 +1,20 @@
+// **** Get Time and date *****
+
+function getTime() {
+  const timeElement = document.getElementById("time");
+  const time = new Date().toLocaleTimeString();
+  timeElement.textContent = time;
+}
+function getDate() {
+  const dateElement = document.getElementById("date");
+  const date = new Date().toLocaleDateString();
+  dateElement.textContent = date;
+}
+setInterval(() => {
+  getDate();
+  getTime();
+}, 1000);
+
 // ************ COVID Statistics ***********************
 // ** Get the Countries
 const countryOption = {
@@ -11,7 +28,7 @@ const countryOption = {
 fetch("https://covid-193.p.rapidapi.com/countries", countryOption)
   .then((response) => response.json())
   .then((data) => getCountries(data.response))
-  .catch((err) => console.error(err));
+  .catch((err) => alert(err));
 
 const countriesDiv = document.getElementById("countries");
 
@@ -21,7 +38,7 @@ function getCountries(countries) {
     p.textContent = country;
     p.addEventListener("click", (e) => countryName(e));
     p.className =
-      "my-1 country py-1 border-b-4 border-white hover:bg-white cursor-pointer";
+      "my-1 country py-1 border-b-4 border-white hover:bg-white active:bg-white cursor-pointer";
     countriesDiv.appendChild(p);
   });
 }
