@@ -24,12 +24,13 @@
       <section class="col-span-4 text-gray-700 border border-gray-700 p-4">
         <div class="border-b-2 border-gray-700">
           <h2 class="font-bold text-lg">
-            Get all current statistics for Bangladesh
+            Get all current statistics for
+            <span class="text-blue-500" id="headerCountry">Bangladesh</span>
           </h2>
           <div class="flex justify-between py-2">
-            <p>Continent: Asia</p>
-            <p>Country: Bangladesh</p>
-            <p>Population: 167885689</p>
+            <p>Continent: <span id="continent">Asia</span></p>
+            <p>Country: <span id="country">Bangladesh</span></p>
+            <p>Population: <span id="population">167885689</span></p>
           </div>
         </div>
         <div class="flex flex-col justify-between gap-4 pt-4">
@@ -38,19 +39,19 @@
             <h2 class="col-span-5 text-xl font-bold">Cases</h2>
             <div class="bg-slate-50 border border-gray-400 text-center">
               <p class="w-full border-b border-gray-400">New</p>
-              <p class="font-bold text-2xl">+7</p>
+              <p class="font-bold text-2xl" id="caseNew"></p>
             </div>
             <div class="bg-slate-50 border border-gray-400 text-center">
               <p class="w-full border-b border-gray-400">Active</p>
-              <p class="font-bold text-2xl">10739</p>
+              <p class="font-bold text-2xl" id="caseActive"></p>
             </div>
             <div class="bg-slate-50 border border-gray-400 text-center">
               <p class="w-full border-b border-gray-400">Recovered</p>
-              <p class="font-bold text-2xl">199764</p>
+              <p class="font-bold text-2xl" id="caseRecovered"></p>
             </div>
             <div class="bg-slate-50 border border-gray-400 text-center">
               <p class="w-full border-b border-gray-400">Total</p>
-              <p class="font-bold text-2xl">1949764</p>
+              <p class="font-bold text-2xl" id="caseTotal"></p>
             </div>
           </div>
           <!-- * Deaths * -->
@@ -58,11 +59,11 @@
             <h2 class="col-span-5 text-xl font-bold">Deaths</h2>
             <div class="bg-slate-50 border border-gray-400 text-center">
               <p class="w-full border-b border-gray-400">New</p>
-              <p class="font-bold text-2xl">+2</p>
+              <p class="font-bold text-2xl" id="deathNew"></p>
             </div>
             <div class="bg-slate-50 border border-gray-400 text-center">
               <p class="w-full border-b border-gray-400">Total</p>
-              <p class="font-bold text-2xl">39943</p>
+              <p class="font-bold text-2xl" id="deathTotal"></p>
             </div>
           </div>
           <!-- * Tests * -->
@@ -70,7 +71,7 @@
             <h2 class="col-span-5 text-xl font-bold">Tests</h2>
             <div class="bg-slate-50 border border-gray-400 text-center">
               <p class="w-full border-b border-gray-400">Total</p>
-              <p class="font-bold text-2xl">39943</p>
+              <p class="font-bold text-2xl" id="testTotal"></p>
             </div>
           </div>
         </div>
